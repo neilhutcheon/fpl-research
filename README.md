@@ -20,6 +20,15 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173). The Vite proxy forwards `/api/fpl` to `https://fantasy.premierleague.com/api` and `/api/draft` to `https://draft.premierleague.com/api` so the browser is not blocked by CORS.
 
+## Production / Koyeb
+
+```bash
+npm run build
+PORT=8000 npm start
+```
+
+Koyeb must set **Build command** to `npm run build` and **Run command** to `npm start`. The Node process listens on `PORT` (8000). A paste-ready definition is in `koyeb.definition.json`.
+
 ## Tests
 
 ```bash

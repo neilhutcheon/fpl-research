@@ -5,6 +5,7 @@
 - [x] 2026-09-06 — Scaffold FPL Research Desk (Vite/React, API proxy, planning docs)
 - [x] 2026-09-06 — Team view, matchup view, weekly start/sit, and trade compare
 - [x] 2026-09-06 — Draft league 41653 (H2H table, matchups, rosters, waivers, free agents)
+- [x] 2026-09-06 — Production server + Koyeb build/run commands (port 8000)
 
 ## Discovered During Work
 

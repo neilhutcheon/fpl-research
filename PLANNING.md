@@ -13,7 +13,8 @@ A local research tool for Fantasy Premier League. It pulls live data from the un
 ## Architecture
 
 - **Frontend:** React 19 + Vite (JavaScript).
-- **Proxy:** Vite dev server forwards `/api/fpl/*` to `https://fantasy.premierleague.com/api/*` and `/api/draft/*` to `https://draft.premierleague.com/api/*` to avoid browser CORS blocks.
+- **Proxy:** Vite (dev) and `server.js` (production) forward `/api/fpl/*` and `/api/draft/*` to the official FPL/Draft APIs so the browser is not blocked by CORS.
+- **Production:** `npm run build` then `npm start` (Node on `PORT`, default 8000) for Koyeb.
 - **Data sources (same endpoints as the Analytics Vidhya article, plus live scores):**
   - `bootstrap-static/` — players, teams, positions, gameweeks
   - `fixtures/` — full fixture list with FDR
